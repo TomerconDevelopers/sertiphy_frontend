@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:sertiphy/view/admin/cert/edit.dart';
+import 'package:sertiphy/view/admin/cert/view.dart';
 import 'package:sertiphy/view/admin/certificates.dart';
 import 'package:sertiphy/view/admin/dashboard.dart';
 import 'package:sertiphy/view/admin/templates.dart';
@@ -19,4 +21,6 @@ List<GetPage> routes =[
   GetPage(name: 'admin/certificates', page: () => Certificates()),
   GetPage(name: 'admin/userdata', page: () => UserData()),
   GetPage(name: 'admin/templates', page: () => Templates()),
+  GetPage(name: '/admin/cert/view', page: () => CertView()),
+  GetPage(name: '/admin/cert/edit', page: () => EditTemp()),
 ];
